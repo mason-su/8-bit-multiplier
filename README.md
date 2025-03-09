@@ -1,7 +1,7 @@
 # 8-bit Multiplier Report
 
 ## Introduction
-In EEP1 CPU configuration, there are no implemented multipliers. If we try to perform multiplication
+In EEP1 CPU configuration, there is no implemented multipliers. If we try to perform multiplication
 in EEP1 by fully software implementation, it needs 34 clock cycles to complete for a 16-bit unsigned
 multiplication based on the result from Task 4 or 40 clock cycles for 32-bit unsigned multiplication.
 
@@ -11,11 +11,11 @@ multiplier, which means it takes the same number of clock cycles to complete the
 EEP1 machine code instruction do.
 
 I only made an 8-bit multiplier instead of a 16-bit multiplier (which is equal to the width of registers)
-is because that will give a 32-bit product, which is far bigger than the width of registers. 
+is because that will give a 32 bit product, which is far bigger than the width of registers. 
 
 ## Mathematical Background and Implementation
 ### 1-bit unsigned multiplier
-Let's first look at the mathematical and Boolean algorithm for 1-bit unsigned multiplication:
+Let's first look at the mathematical and Boolean algorithm for 1-bit unsigned multiplcation:
 A 1-bit unsigned multiplier takes two 1-bit binary numbers (A and B) and produces a 1-bit 
 product (P). Since binary multiplication follows the same principles as decimal multiplication but 
 with only two possible values (0 and 1), the truth table for a 1-bit multiplier is simple:
@@ -28,10 +28,10 @@ with only two possible values (0 and 1), the truth table for a 1-bit multiplier 
 | 1 | 1 | 1       |
 
 The multiplication follows:
-- \( 0 	* 0 = 0 \)
-- \( 0 	* 1 = 0 \)
-- \( 1 	* 0 = 0 \)
-- \( 1 	* 1 = 1 \)
+- \( 0 	imes 0 = 0 \)
+- \( 0 	imes 1 = 0 \)
+- \( 1 	imes 0 = 0 \)
+- \( 1 	imes 1 = 1 \)
 
 Thus, the output \( P \) is simply the logical AND operation between A and B.
 
@@ -41,9 +41,7 @@ The multiplication follows standard binary multiplication rules, where each bit 
 each bit of A.
 Consider two 2-bit numbers:
 
-$$
-A = A_1A_0, \quad B = B_1B_0 
-$$
+\[ A = A_1A_0, \quad B = B_1B_0 \]
 
 The multiplication is performed as follows:
 
@@ -222,7 +220,7 @@ The final 16‑bit product is obtained by aligning and adding these partial prod
 
 ---
 
-### Signed multiplication 
+### signed multiplication 
 
 Different for addition and subtraction, we can not directly use the hardware for unsigned 
 multiplication in signed one, therefore, we need to design a signed multiplier.
@@ -250,4 +248,5 @@ that controls whether signed ot unsigned output is desired.
 For signed multiplication itself, we also need to select whether the product is positive or
 negative. If the product is positive, we can just output it, and if it's negative, we need to
 again use 2's compliment to transfer it back to negative number. Here's the hardware implementation:
+
 
