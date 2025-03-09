@@ -1,3 +1,6 @@
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 # 8-bit-multiplier
 ## Introduction
 In EEP1 CPU configuration, there is no implemented multipliers. If we try to perform multiplication
