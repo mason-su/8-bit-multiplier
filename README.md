@@ -226,7 +226,7 @@ The final 16‑bit product is obtained by aligning and adding these partial prod
 
 ---
 
-### signed multiplication 
+### Signed Multiplication 
 
 Different for addition and subtraction, we can not directly use the hardware for unsigned 
 multiplication in signed one, therefore, we need to design a signed multiplier.
