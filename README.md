@@ -93,14 +93,12 @@ complex in computer than addition. Therefore, we can try to reduce the steps of 
 
 By observing the long multiplication diagram for 2-bit unsigned multiplier, we can find out that the final
 product is
-$$
-P = 4 \times (A_1 B_1) + 2 \times (A_1 B_0 + A_0 B_1) + (A_0 B_0)
-$$
+![Product Equation](https://latex.codecogs.com/png.latex?P%20=%204%20%5Ctimes%20%28A_1%20B_1%29%20+%202%20%5Ctimes%20%28A_1%20B_0%20+%20A_0%20B_1%29%20+%20%28A_0%20B_0%29)
+
 , and
-$$
-A_1 B_0 + A_0 B_1 = (A_1 + A_2)(B_1 + B_2) - A_1 B_1 - A_2 B_2
-$$
-therefore, we can reduce four steps multiplication to three steps multiplication. And this is the
+![Equation](https://latex.codecogs.com/png.latex?A_1%20B_0%20+%20A_0%20B_1%20=%20%28A_1%20+%20A_2%29%28B_1%20+%20B_2%29%20-%20A_1%20B_1%20-%20A_2%20B_2)
+
+Therefore, we can reduce four steps multiplication to three steps multiplication. And this is the
 implementation based on this algorithm. Here is the implementation:
 ![two bit multiplier new algorithm](graph/two_bit_multiplier_2.png).
 
