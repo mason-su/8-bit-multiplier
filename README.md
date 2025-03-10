@@ -116,7 +116,7 @@ one.
 
 Let: A = A₃A₂A₁A₀ (4-bit binary number) and B = B₃B₂B₁B₀ (4-bit binary number). We are looking to compute P = A × B, which will be an 8-bit number.
 
-##### Partial Products (Table Representation)
+##### Partial Products 
 
 We can break the multiplication into smaller parts as follows:
 
@@ -168,7 +168,7 @@ For A = A₃A₂A₁A₀ and B = B₃B₂B₁B₀, the product P = P₇P₆P₅P
 #### 8‑Bit Unsigned Multiplier Based on a 4‑Bit Unsigned Multiplier
 
 The way of implementing an 8-bit unsigned multiplier is similar to implementing a 4-bit
-multiplier, and the biggest difference is we need to double the width of adders used.
+multiplier, and the biggest difference is we need to double the width of the adders used.
 
 Let:
 - **A** = A₇ A₆ A₅ A₄ A₃ A₂ A₁ A₀ (8‑bit binary number)
