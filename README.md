@@ -268,7 +268,7 @@ result for the alternative implementation:
 ![two bit alternative truth table](graph/two_bit_multiplier_2_tb.png)
 
 Then, let's move to 4-bit unsigned multiplier. This is the implementation:
-![four bit multiplier](graoh/four_bit_multiplier.png)
+![four bit multiplier](graph/four_bit_multiplier.png)
 The two LSBs of the product are directly comes from the two LSBs of P_0, and all other bits are formed by the same algorithm
 above. The adders used are actually another form of ripple-carry adders, which means the carry-out of this adder is the
 carry-in of the next adder. This is theoretically valid because the adders are actually doing addition but with two "carry-ins"
