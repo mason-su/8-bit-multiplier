@@ -102,7 +102,7 @@ A_1 B_0 + A_0 B_1 = (A_1 + A_2)(B_1 + B_2) - A_1 B_1 - A_2 B_2
 $$
 therefore, we can reduce four steps multiplication to three steps multiplication. And this is the
 implementation based on this algorithm. Here is the implementation:
-![two bit multiplier new algorithm](graph/two_bit_multiplier_2).
+![two bit multiplier new algorithm](graph/two_bit_multiplier_2.png).
 
 The output "WASTE" comes from the carry-out bit of the half-adder, this is always 0 so it is
 wasted. The output of this multiplier should be the same compare to the previous implementation.
